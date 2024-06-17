@@ -22,6 +22,10 @@ const config: Config = {
     mermaid: true,
   },
   themes: ["@docusaurus/theme-mermaid"],
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en", "fr"],
+  },
   themeConfig: {
     navbar: {
       title: "Actix Web",
@@ -49,6 +53,20 @@ const config: Config = {
           activeBasePath: "code",
           label: "Code",
           position: "left",
+        },
+        {
+          type: "localeDropdown",
+          position: "right",
+          dropdownItemsAfter: [
+            {
+              type: "html",
+              value: '<hr style="margin: 0.3rem 0;">',
+            },
+            {
+              href: "https://github.com/actix/actix-web",
+              label: "Help Us Translate",
+            },
+          ],
         },
         {
           href: "https://discord.gg/NWpN5mmg3x",
@@ -88,6 +106,7 @@ const config: Config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/actix/actix-website/edit/main/",
+          editLocalizedFiles: true,
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),

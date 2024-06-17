@@ -13,6 +13,7 @@ import {
   faPuzzlePiece,
   faTachometerAlt,
 } from "@fortawesome/free-solid-svg-icons";
+import Translate from "@docusaurus/Translate";
 
 const Home = () => {
   const { siteConfig } = useDocusaurusContext();
@@ -33,40 +34,56 @@ const highlights = [
     icon: faShieldAlt,
     title: "Type Safe",
     description: (
-      <>
+      <Translate>
         Forget about stringly typed objects, from request to response,
         everything has types.
-      </>
+      </Translate>
     ),
   },
   {
     icon: faBatteryFull,
     title: "Feature Rich",
     description: (
-      <>Actix provides a lot of features out of box. HTTP/2, logging, etc.</>
+      <Translate>
+        Actix provides a lot of features out of box. HTTP/2, logging, etc.
+      </Translate>
     ),
   },
   {
     icon: faPuzzlePiece,
     title: "Extensible",
     description: (
-      <>Easily create your own libraries that any Actix application can use.</>
+      <Translate>
+        Easily create your own libraries that any Actix application can use.
+      </Translate>
     ),
   },
   {
     icon: faTachometerAlt,
     title: "Blazingly Fast",
     description: (
-      <>
-        Actix is blazingly fast. Don't take our word for it --{" "}
-        <a
-          href="https://www.techempower.com/benchmarks/#section=data-r21&hw=ph&test=fortune"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          see for yourself!
-        </a>
-      </>
+      <Translate
+        values={{
+          benchmarkLink: (
+            <a
+              href="https://www.techempower.com/benchmarks/#section=data-r21&hw=ph&test=fortune"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Translate
+                id="homepage.visitMyBlog.linkLabel"
+                description="The label for the link to my blog"
+              >
+                see for yourself!
+              </Translate>
+            </a>
+          ),
+        }}
+      >
+        {
+          "Actix is blazingly fast. Don't take our word for it -- {benchmarkLink}"
+        }
+      </Translate>
     ),
   },
 ];

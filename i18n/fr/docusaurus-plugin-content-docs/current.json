@@ -1,0 +1,46 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.Introduction": {
+    "message": "Introduction",
+    "description": "The label for category Introduction in sidebar docs"
+  },
+  "sidebar.docs.category.Basics": {
+    "message": "Basics",
+    "description": "The label for category Basics in sidebar docs"
+  },
+  "sidebar.docs.category.Advanced": {
+    "message": "Advanced",
+    "description": "The label for category Advanced in sidebar docs"
+  },
+  "sidebar.docs.category.Protocols": {
+    "message": "Protocols",
+    "description": "The label for category Protocols in sidebar docs"
+  },
+  "sidebar.docs.category.Patterns": {
+    "message": "Patterns",
+    "description": "The label for category Patterns in sidebar docs"
+  },
+  "sidebar.docs.category.Diagrams": {
+    "message": "Diagrams",
+    "description": "The label for category Diagrams in sidebar docs"
+  },
+  "sidebar.docs.category.Actix": {
+    "message": "Actix",
+    "description": "The label for category Actix in sidebar docs"
+  },
+  "sidebar.docs.category.API Documentation": {
+    "message": "API Documentation",
+    "description": "The label for category API Documentation in sidebar docs"
+  },
+  "sidebar.docs.link.actix": {
+    "message": "actix",
+    "description": "The label for link actix in sidebar docs, linking to https://docs.rs/actix/latest/actix/"
+  },
+  "sidebar.docs.link.actix-web": {
+    "message": "actix-web",
+    "description": "The label for link actix-web in sidebar docs, linking to https://docs.rs/actix-web/latest/actix_web/"
+  }
+}
